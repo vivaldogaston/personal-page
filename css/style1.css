@@ -1,0 +1,88 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
+}
+@font-face{  font-family: "Viga";
+    src: url("Viga/Viga-Regular.ttf");}
+*{
+    font-family: "Viga";
+}
+#menu{
+    text-align: center;
+    padding: 30px;
+      
+}
+#container{
+ 
+}
+#menu a{
+    margin:10px;
+}
+#home,#contact,#projects{
+    height: 500px;
+    margin: 20px;
+    width: auto;
+    margin-left:100px;
+    
+    
+    border: solid 1px;
+}
+#home{
+    border:solid 1px whitesmoke;
+    display: grid;
+    align-content: center;
+    
+}
+.texto{
+    flex:2;
+}
+#home img{
+    border-radius: 50%;
+    border: 5px whitesmoke solid;
+    padding: 5px;
+  
+    margin: 2px;
+    height:300px;
+    width:300px;
+    flex: 1;
+
+}
+#contact,#projects{
+    border:solid 0px whitesmoke;
+    text-align: enter;
+    padding: 10px;
+    
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: none;
+}
+#contact i,#home i{
+    margin: 20px;
+    cursor: pointer;
+}
+.buttons a{
+ border: solid 1px whitesmoke;
+ width: 10px;
+ height: 10px;
+ margin: 10px;
+}
+.active{
+    background-color: whitesmoke;
+}
+#projects img{
+    border-radius: 5px;
+}
+#projects div {
+    border:solid 0px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+#projects ul{
+    text-align: left;
+}

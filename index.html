@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <script src="https://kit.fontawesome.com/f6ce6bbb77.js" crossorigin="anonymous"></script>
+
+    <title>Vivaldo Gaston</title>
+</head>
+<body>
+    
+    
+    <div class="buttons" style="display: flex;flex-direction: column;position:fixed;top:50%;">
+        <a href="#home"></a>
+        <a href="#projects"></a>   
+        <a href="#contact"></a>   
+    </div>
+    <div id="menu">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+       
+    </div>
+    <div id="home">
+        <div class="texto">
+            <h1>I'm Vivaldo Gaston. I'm a backend developer.</h1>
+            <p>
+                Studying Business Information Technology.<br>
+                I work with:<br>
+                <i title="HTML" class="fab fa-html5 fa-2x"></i>
+                <i title="CSS" class="fab fa-css3-alt fa-2x"></i>
+                <i title="PHP" class="fab fa-php fa-2x"></i>
+                <i title="JavaScript" class="fab fa-js fa-2x"></i>
+                <br>
+                Worked with C#, SQL SERVER between 2016 and 2017. Basic knowledge in Python
+                <br>
+                Currently learning React.js <i title="React.js" class="fab fa-react fa-2x"></i>
+            </p>
+        </div>
+        <img src="imagens/WhatsApp Image 2020-11-27 at 12.51.58.jpeg">
+    </div>
+    <div id="projects">
+        <h2 style="text-align: cener;">Some repositories on my Github:</h2>
+        <div style="display:flex;flex-direction: row;">
+            <div class="project">
+                <img src="imagens/tasks_screenshot1.png">
+                <h3>Tasks</h3>
+               
+                    <p>Made with 
+                        <i title="HTML" class="fab fa-html5 fa-2x"></i>
+                        <i title="CSS" class="fab fa-css3-alt fa-2x"></i>
+                        <i title="React.js" class="fab fa-react fa-2x"></i>
+                    </p>
+                    
+                <a target="_blank" href="https://github.com/vivaldogaston/tasks">Click here</a>
+            </div>
+            <div class="project">
+                <img src="imagens/1_PjHEsBxh7B9BrYARqHcujQ.jpeg">
+                <h3>Toggle</h3>
+                    <p>Made with <i class="fab fa-html5 fa-2x"></i>
+                        <i title="CSS" class="fab fa-css3-alt fa-2x"></i>
+                        <i title="React.js" class="fab fa-react fa-2x"></i>
+                    </p> 
+                
+                <a target="_blank" href="https://github.com/vivaldogaston/toggle">Click here</a>
+            </div>
+            <div class="project">
+                <i style="height:200px;" class="fas fa-shopping-cart fa-10x"></i>
+                <h3>Shopping Cart</h3>
+                    <p>Made with 
+                        <i title="HTML" class="fab fa-html5 fa-2x"></i>
+                        <i title="CSS" class="fab fa-css3-alt fa-2x"></i>
+                        <i title="PHP" class="fab fa-php fa-2x"></i>
+                        <i title="JavaScript" class="fab fa-js fa-2x"></i>
+                    </p>
+              
+                <a target="_blank" href="https://github.com/vivaldogaston/shopping_cart">Click here</a>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+
+        <p>Contact:</p>
+        <a target="_blank" href="https://www.facebook.com/vivaldo.gaston">
+            <i title='Facebook' class='fab fa-facebook fa-2x'></i>Vivaldo Gaston
+        </a>
+        <a target="_blank" href="https://www.instagram.com/vigas__">
+            <i title='Instagram' class='fab fa-instagram fa-2x'></i>@vigas__
+        </a>
+        <a target="_blank" href="https://www.twitter.com/vigas__">
+            <i title='Twitter' class='fab fa-twitter fa-2x'></i>@vigas__
+        </a>
+        <a><i title='Email' class='fas fa-at fa-2x'></i>vivaldo2009@live.com.pt</a>
+        <a target="_blank" href="https://github.com/vivaldogaston">
+            <i title='Github' class='fab fa-github fa-2x'></i>vivaldogaston
+        </a>
+       
+
+    </div>
+
+    <div style="text-align: center;margin:70px">
+        2020&copy;Vivaldo Gaston
+    </div>
+    <script>
+            
+        document.onload=document.getElementsByClassName("buttons")[0].children[0].className="active";
+        document.onscroll=function(){
+           //alert(window.scrollY);
+        if(window.scrollY===0 || window.scrollY<=300){
+            //alert("No top");
+            document.getElementsByClassName("buttons")[0].children[0].className="active";
+            document.getElementsByClassName("buttons")[0].children[1].className="";
+            document.getElementsByClassName("buttons")[0].children[2].className="";
+        }
+        else if(window.scrollY>300 || window.scrollY<=600) {
+            ///alert("At the bottom");
+            document.getElementsByClassName("buttons")[0].children[0].className="";
+            document.getElementsByClassName("buttons")[0].children[1].className="active";
+            document.getElementsByClassName("buttons")[0].children[2].className="";
+
+        }
+        if(window.scrollY>600){
+            document.getElementsByClassName("buttons")[0].children[0].className="";
+            document.getElementsByClassName("buttons")[0].children[1].className="";
+            document.getElementsByClassName("buttons")[0].children[2].className="active";
+        }
+        };
+        
+    </script>
+</body>
+</html>
