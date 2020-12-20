@@ -7,7 +7,7 @@ body{
     margin: 0;
 }
 @font-face{  font-family: "Viga";
-    src: url("Viga/Viga-Regular.ttf");}
+    src: url("/Viga/Viga-Regular.ttf");}
 *{
     font-family: "Viga";
 }
