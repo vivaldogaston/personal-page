@@ -11,7 +11,6 @@ body{
     margin-bottom:100px;
 }
 #home,#contact,#projects{
-    margin:0;
     margin: 30px;
     padding: 0;
     border:solid 0px;
@@ -26,15 +25,19 @@ body{
     margin: auto;
     
 }
+#home{}
 #projects{
-    
     display: block;
-    
     padding: 0;
+    border-top: solid 4px white;
+    /*background-color: rgb(12, 61, 102);*/
 }
+
 .flex{
     display: block;
 }
 #contact{
     text-align: left;
+    border-top: solid 4px white;
+
 }
