@@ -2,6 +2,11 @@ body{
     text-align: center;
     width: 100%;
 }
+@font-face{  font-family: "Viga";
+    src: url("Viga/Viga-Regular.ttf");}
+*{
+    font-family: "Viga";
+}
 .buttons a{
     margin: 5px;
 }
