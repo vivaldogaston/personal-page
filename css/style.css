@@ -98,3 +98,6 @@ a{
     border: solid 0px rgb(27, 150, 231);
  
 }
+.flex{
+    display:flex;flex-direction: row;
+}
