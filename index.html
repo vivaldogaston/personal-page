@@ -15,19 +15,20 @@
     
     <div class="buttons" style="display: flex;flex-direction: column;position:fixed;top:50%;">
         <a href="#home"></a>
+        <a href="#skills"></a>   
         <a href="#projects"></a>   
         <a href="#contact"></a>   
     </div>
     <div id="menu">
         <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
        
     </div>
     <div id="home">
         <div class="texto">
-            <h1>I'm Vivaldo Gaston. I'm a backend developer.</h1>
-            <p>
+            <h1>I'm Vivaldo Gaston. I'm a backend developer.</h1> 
                 Studying Business Information Technology.<br>
                 I work with:<br>
                 <i title="HTML" class="fab fa-html5 fa-2x"></i>
@@ -40,10 +41,20 @@
                 Currently learning React.js <i title="React.js" class="fab fa-react fa-2x"></i>
             </p>
         </div>
-        <img src="imagens/WhatsApp Image 2020-11-27 at 12.51.58.jpeg">
+        <img src="imagens/WhatsApp Image 2021-01-26 at 17.08.04.jpeg">
+    </div>
+    <div id="skills">
+        <h1 style="text-align: center;">Skills</h1>
+        
+        <i title="HTML" class="fab fa-html5 fa-5x"></i>
+        <i title="CSS" class="fab fa-css3-alt fa-5x"></i>
+        <i title="PHP" class="fab fa-php fa-5x"></i>
+        <i title="JavaScript" class="fab fa-js fa-5x"></i>
+        
     </div>
     <div id="projects">
-        <h2>Some repositories on my Github:</h2>
+        <h1 style="text-align: center;">Repositories on my Github</h1>
+        
         <div class="flex">
             <div class="project">
                 <img src="imagens/tasks_screenshot1.png">
@@ -68,7 +79,7 @@
                 <a target="_blank" href="https://github.com/vivaldogaston/toggle">Click here</a>
             </div>
             <div class="project">
-                <i style="height:200px;" class="fas fa-shopping-cart fa-10x"></i>
+                <i style="height:100px;" class="fas fa-shopping-cart fa-7x"></i>
                 <h3>Shopping Cart</h3>
                     <p>Made with 
                         <i title="HTML" class="fab fa-html5 fa-2x"></i>
@@ -97,13 +108,15 @@
         <a target="_blank" href="https://github.com/vivaldogaston">
             <i title='Github' class='fab fa-github fa-2x'></i>vivaldogaston
         </a>
-       
 
+        
     </div>
+<footer>
+    <div style="text-align: center;width:100%;margin-top:0px;margin-bottom: 0px;background:  rgb(32, 80, 112);">
+        <p style="margin:0;color:white">2020&copy;Vivaldo Gaston</p>
+    </div>
+</footer>
 
-    <div style="text-align: center;width:100%;margin-top:70px;margin-bottom: 70px;">
-        <p>2020&copy;Vivaldo Gaston</p>
-    </div>
     
 
     <script>
@@ -111,24 +124,35 @@
         document.onload=document.getElementsByClassName("buttons")[0].children[0].className="active";
         document.onscroll=function(){
            //alert(window.scrollY);
-        if(window.scrollY===0 || window.scrollY<=300){
-            //alert("No top");
-            document.getElementsByClassName("buttons")[0].children[0].className="active";
-            document.getElementsByClassName("buttons")[0].children[1].className="";
-            document.getElementsByClassName("buttons")[0].children[2].className="";
-        }
-        else if(window.scrollY>300 || window.scrollY<=600) {
-            ///alert("At the bottom");
-            document.getElementsByClassName("buttons")[0].children[0].className="";
-            document.getElementsByClassName("buttons")[0].children[1].className="active";
-            document.getElementsByClassName("buttons")[0].children[2].className="";
-
-        }
-        if(window.scrollY>600){
-            document.getElementsByClassName("buttons")[0].children[0].className="";
-            document.getElementsByClassName("buttons")[0].children[1].className="";
-            document.getElementsByClassName("buttons")[0].children[2].className="active";
-        }
+            if(window.scrollY==0 || window.scrollY<=500){
+                //alert("No top");
+                document.getElementsByClassName("buttons")[0].children[0].className="active";
+                document.getElementsByClassName("buttons")[0].children[1].className="";
+                document.getElementsByClassName("buttons")[0].children[2].className="";
+                document.getElementsByClassName("buttons")[0].children[3].className="";
+            }
+            else if(window.scrollY>500 || window.scrollY<=1000) {
+                
+                document.getElementsByClassName("buttons")[0].children[0].className="";
+                document.getElementsByClassName("buttons")[0].children[1].className="active";
+                document.getElementsByClassName("buttons")[0].children[2].className="";
+                document.getElementsByClassName("buttons")[0].children[3].className="";
+            }
+            else 
+            {
+                if(window.scrollY>1000 || window.scrollY<=1500){
+                    document.getElementsByClassName("buttons")[0].children[0].className="";
+                    document.getElementsByClassName("buttons")[0].children[1].className="";
+                    document.getElementsByClassName("buttons")[0].children[2].className="active";
+                    document.getElementsByClassName("buttons")[0].children[3].className="";
+                }
+                else if(window.scrollY>1500){
+                    document.getElementsByClassName("buttons")[0].children[0].className="";
+                    document.getElementsByClassName("buttons")[0].children[1].className="";
+                    document.getElementsByClassName("buttons")[0].children[2].className="";
+                    document.getElementsByClassName("buttons")[0].children[3].className="active";
+                }
+            }
         };
         
     </script>

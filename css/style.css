@@ -2,8 +2,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgba(0, 0, 0, 0.836);
-    color: white;
+    background-color: white /*rgba(0, 0, 0, 0.836)*/;
+    
     margin: 0;
 }
 @font-face{  font-family: "Viga";
@@ -13,14 +13,15 @@ body{
 }
 #menu{
     text-align: center;
-    padding: 20px;
-   /* position: fixed;
-    width: 100%;
+    padding: 20px;position: fixed;   width: 100%;
+   /* 
+ 
    */
     border: 0px solid;
     
     top: 0;
-    background-color: rgba(255, 255, 255, 0.089);
+    /*background-color: rgba(255, 255, 255, 0.089);*/
+    background-color:rgb(32, 80, 112);
     
 }
 #menu a{
@@ -31,29 +32,44 @@ body{
     transition: 0.5s;
 }
 
-#home,#contact,#projects{
-    height: auto;
-    margin-bottom: 50px;
+#home,#contact,#projects,#skills{
+    height: 500px;
+    margin-bottom: 0px;
     margin-left:00px;
-    padding-left:100px;
-    padding-right:20px ;
-    border:solid 00px whitesmoke;
+    padding:50px 50px 50px 100px;
+   
+    border:solid 0px black;
+
 }
 #home{
     display: flex;
     align-content: center;
     margin-top: 100px;
+    color: rgb(32, 80, 112);
 }
+#projects{
+    color:  rgb(32, 80, 112);
+}
+#skills{
+    text-align: center;
+    background:/*rgb(0, 101, 168)*/ rgb(32, 80, 112);
+
+    color:white;
+    padding: 20px;
+    height: 400px;
+
+}
+#contact{background: rgb(32, 80, 112);}
 .texto{
     flex:2;
 }
 #home img{
-    border-radius: 10%;
-    border: 5px  rgb(27, 150, 231) solid;
+    border-radius: 50%;
+    border: 5px  rgb(32, 80, 112) solid;
     padding: 5px;
     margin-right: 100px;
-    height:300px;
-    width:250px;
+    height:320px;
+    width:300px;
     
 }
 a{
@@ -63,29 +79,31 @@ a{
 }
 #contact{
     display: grid;
+    color:white;
 }
-#contact i,#home i{
+#contact i,#home i,#skills i{
     margin: 20px;
     cursor: pointer;
 }
-.buttons a{
- border: solid 1px whitesmoke;
+/*.buttons a{
+ border: solid 1px rgb(43, 147, 216);
  width: 10px;
  height: 10px;
  margin: 10px;
-}
+}*/
 .active{
-    background-color: whitesmoke;
+    background-color: rgb(43, 147, 216);
 }
 #projects img{
     border-radius: 5px;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 #projects ul{
     text-align: left;
 }
+
 .project{
     text-align: center;
     padding: 0px;
