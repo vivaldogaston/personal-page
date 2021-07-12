@@ -13,12 +13,10 @@ body{
 }
 #menu{
     text-align: center;
-    padding: 20px;position: fixed;   width: 100%;
-   /* 
- 
-   */
+    padding: 20px;
+    position: fixed;   
+    width: 100%;
     border: 0px solid;
-    
     top: 0;
     /*background-color: rgba(255, 255, 255, 0.089);*/
     background-color:rgb(32, 80, 112);
@@ -32,7 +30,7 @@ body{
     transition: 0.5s;
 }
 
-#home,#contact,#projects,#skills{
+#home,#contact,#projects,#youtube,#skills{
     height: 500px;
     margin-bottom: 0px;
     margin-left:00px;
@@ -50,7 +48,7 @@ body{
 #projects{
     color:  rgb(32, 80, 112);
 }
-#skills{
+#skills, #youtube{
     text-align: center;
     background:/*rgb(0, 101, 168)*/ rgb(32, 80, 112);
 
@@ -59,9 +57,14 @@ body{
     height: 400px;
 
 }
-#contact{background: rgb(32, 80, 112);}
+#youtube{background: rgb(32, 80, 112); height: auto;}
+.playlist{
+    display: inline-block;
+}
 .texto{
     flex:2;
+    border:solid 0px;
+    padding: 30px;
 }
 #home img{
     border-radius: 50%;
@@ -73,17 +76,21 @@ body{
     
 }
 a{
-    color: whitesmoke;
+    color: rgb(32, 80, 112);
     text-decoration: none;
     text-transform: none;
 }
 #contact{
     display: grid;
-    color:white;
+    color:rgb(32, 80, 112);
 }
 #contact i,#home i,#skills i{
     margin: 20px;
     cursor: pointer;
+}
+.csharp{
+    
+    color: white;
 }
 /*.buttons a{
  border: solid 1px rgb(43, 147, 216);
@@ -99,7 +106,7 @@ a{
     width: 100px;
     height: 100px;
 }
-
+#projects a{color: rgb(12, 61, 102);}
 #projects ul{
     text-align: left;
 }
@@ -118,4 +125,7 @@ a{
 }
 .flex{
     display:flex;flex-direction: row;
+}
+iframe{
+    border: solid 1px yellow;
 }

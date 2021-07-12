@@ -14,8 +14,15 @@ body{
 #menu{
     width: 100%;
     margin-bottom:00px;
+    text-align: center;
+    padding: 0;
+    padding-top:20px; 
+    height: 40px;
 }
-#home,#contact,#projects{
+#menu a{
+    margin: 4px;
+}
+#home,#contact,#projects,#youtube{
     margin-top: 30px;
     padding: 5px;
     border:solid 0px;
@@ -37,8 +44,9 @@ body{
     padding: 0;
     border-top: solid 0px white;
     /*background-color: rgb(12, 61, 102);*/
+    
 }
-
+#projects a{color: rgb(12, 61, 102);}
 .flex{
     display: block;
 }
@@ -46,4 +54,8 @@ body{
     text-align: left;
     border-top: solid 0px white;
 
+}
+iframe{
+    width: 95vw;
+    height: 280px;
 }

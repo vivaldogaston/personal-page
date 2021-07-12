@@ -7,7 +7,7 @@
     <link rel="stylesheet" media="screen and (min-width: 300px) and (max-device-width: 800px)" href="css/style1.css" />
     
     <script src="https://kit.fontawesome.com/f6ce6bbb77.js" crossorigin="anonymous"></script>
-<script data-ad-client="ca-pub-7784562744395774" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <title>Vivaldo Gaston</title>
 </head>
 <body>
@@ -16,29 +16,32 @@
     <div class="buttons" style="display: flex;flex-direction: column;position:fixed;top:50%;">
         <a href="#home"></a>
         <a href="#skills"></a>   
-        <a href="#projects"></a>   
+        <a href="#projects"></a> 
+        <a href="#youtube"></a>   
         <a href="#contact"></a>   
     </div>
     <div id="menu">
         <a href="#home">Home</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#youtube">My Youtube</a>
         <a href="#contact">Contact</a>
        
     </div>
     <div id="home">
         <div class="texto">
-            <h1>I'm Vivaldo Gaston. I'm a backend developer.</h1> 
-                Studying Business Information Technology.<br>
-                I work with:<br>
-                <i title="HTML" class="fab fa-html5 fa-2x"></i>
-                <i title="CSS" class="fab fa-css3-alt fa-2x"></i>
-                <i title="PHP" class="fab fa-php fa-2x"></i>
-                <i title="JavaScript" class="fab fa-js fa-2x"></i>
+            <h1>I'm Vivaldo Gaston. I'm a developer.</h1> 
+            <p>
+                I'm 20 years old developer from Angola. Currently living in South Africa for studying reasons.<br>
+                I'm doing Diploma in Business Information Technology, currently on my second year.<bR>
+                I started programming in 2015 in high school. My first "Hello World" was written in C.<BR>
+                Since I was a child I always wondered how applications work, what happens in the background, I was curious.
+                My journey started with C, then .NET Framework where i learnt C# and SQL SERVER. In 2016 I started learning Web development(HTML,CSS, JAVASCRIPT and PHP) 
+            
                 <br>
-                Worked with C#, SQL SERVER between 2016 and 2017. Basic knowledge in Python
+                Worked with C#, SQL SERVER between 2016 and 2017. Basic knowledge in Python and React.js
                 <br>
-                Currently learning React.js <i title="React.js" class="fab fa-react fa-2x"></i>
+                Currently learning React.js<i title="React.js" class="fab fa-react fa-2x"></i>
             </p>
         </div>
         <img src="imagens/WhatsApp Image 2021-01-26 at 17.08.04.jpeg">
@@ -49,7 +52,9 @@
         <i title="HTML" class="fab fa-html5 fa-5x"></i>
         <i title="CSS" class="fab fa-css3-alt fa-5x"></i>
         <i title="PHP" class="fab fa-php fa-5x"></i>
-        <i title="JavaScript" class="fab fa-js fa-5x"></i>
+        <i title="JavaScript" class="fab fa-js fa-5x"></i><br>
+        <i title="C#"><img src="imagens/c-sharp.png" width="80" height="80"style="background:white"></i>
+        <i title="SQL Server"><img src="imagens/sqlserver.png" width="80" height="80"style="background:white"></i>
         
     </div>
     <div id="projects">
@@ -92,6 +97,27 @@
             </div>
         </div>
     </div>
+    <div id="youtube">
+        <h1 style="text-align: center;">My Youtube channel: Programando com o ViGas (Coding with ViGas)</h1>
+        <h2 style="text-align: center;">Playlists available:</h2>
+        
+            <div class="playlist">
+                
+                <h3>Estruturas de dados</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL3SIK_HWIrV9jfCwnoCtFecEvdRa1n1M2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="playlist">
+                
+                <h3>Linguagem C#</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL3SIK_HWIrV-wY7NeBu8ddcKiprp-4GYH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            </div>
+            <div class="playlist">
+                
+                <h3>Lógica de Programação</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL3SIK_HWIrV_UO2kimi3hM_Yt-rDOwNqZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+       
+    </div>
     <div id="contact">
 
         <p>Contacts:</p>
@@ -126,31 +152,45 @@
            //alert(window.scrollY);
             if(window.scrollY==0 || window.scrollY<=500){
                 //alert("No top");
-                document.getElementsByClassName("buttons")[0].children[0].className="active";
-                document.getElementsByClassName("buttons")[0].children[1].className="";
-                document.getElementsByClassName("buttons")[0].children[2].className="";
-                document.getElementsByClassName("buttons")[0].children[3].className="";
+                for(var i=0;i<4;i++){
+                    if(i==0){
+                        document.getElementsByClassName("buttons")[0].children[i].className="active";
+                    }else{
+                        document.getElementsByClassName("buttons")[0].children[i].className="";
+                    }
+                }
             }
             else if(window.scrollY>500 || window.scrollY<=1000) {
+                for(var i=0;i<4;i++){
+                    if(i==1){
+                        document.getElementsByClassName("buttons")[0].children[i].className="active";
+                    }else{
+                        document.getElementsByClassName("buttons")[0].children[i].className="";
+                    }
+                }
                 
-                document.getElementsByClassName("buttons")[0].children[0].className="";
-                document.getElementsByClassName("buttons")[0].children[1].className="active";
-                document.getElementsByClassName("buttons")[0].children[2].className="";
-                document.getElementsByClassName("buttons")[0].children[3].className="";
             }
             else 
             {
                 if(window.scrollY>1000 || window.scrollY<=1500){
-                    document.getElementsByClassName("buttons")[0].children[0].className="";
-                    document.getElementsByClassName("buttons")[0].children[1].className="";
-                    document.getElementsByClassName("buttons")[0].children[2].className="active";
-                    document.getElementsByClassName("buttons")[0].children[3].className="";
+                    for(var i=0;i<4;i++){
+                    if(i==2){
+                        document.getElementsByClassName("buttons")[0].children[i].className="active";
+                    }else{
+                        document.getElementsByClassName("buttons")[0].children[i].className="";
+                    }
+                }
+                  
                 }
                 else if(window.scrollY>1500){
-                    document.getElementsByClassName("buttons")[0].children[0].className="";
-                    document.getElementsByClassName("buttons")[0].children[1].className="";
-                    document.getElementsByClassName("buttons")[0].children[2].className="";
-                    document.getElementsByClassName("buttons")[0].children[3].className="active";
+                    for(var i=0;i<4;i++){
+                    if(i==3){
+                        document.getElementsByClassName("buttons")[0].children[i].className="active";
+                    }else{
+                        document.getElementsByClassName("buttons")[0].children[i].className="";
+                    }
+                }
+                    
                 }
             }
         };
